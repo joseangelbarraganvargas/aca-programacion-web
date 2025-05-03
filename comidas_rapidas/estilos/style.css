@@ -1,0 +1,232 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background-color: #ffe0b2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.banner .btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 30px 20px;
+}
+
+.menu-item p {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== Estilos responsive ===== */
+@media (max-width: 768px) {
+    header, .banner, section {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+
+}
+#vistas a{
+    text-decoration: none; /* QUITA EL SUBRAYADO */
+    color: white; /* COLOR DEL TEXTO */
+    background-color: blue;
+    padding: 10px; /* ESPACIO INTERNO */
+    border-radius: 5px; /* REDONDEAR ESQUINAS */
+
+}
+#vistas a{
+    text-decoration: none; /* QUITA EL SUBRAYADO */
+    color: white; /* COLOR DEL TEXTO */
+    background-color: rgb(0, 0, 0);
+    padding: 10px; /* ESPACIO INTERNO */
+    border-radius: 5px; /* REDONDEAR ESQUINAS */
+    }
+    #vistas a:hover{ /* CUANDO EL MOUSE PASE POR ENCIMA DEL ELEMENTO */
+    background-color: rgb(238, 0, 0); /* CAMBIA EL COLOR DE FONDO */
+    color: yellow; /* CAMBIA EL COLOR DEL TEXTO */
+    width: 150px; /* ANCHO DEL ELEMENTO */
+    transform:scale(1,5); /* ESCALA EL ELEMENTO */
+    }
+
+    #contact-form{
+        
+            display: flex; /* HACE QUE LOS ELEMENTOS SE MUESTRAN EN UNA SOLA LINEA */
+            flex-direction: column;
+            width: 30%; /* ANCHO DEL FORMULARIO */
+            margin: 10px auto; /* CENTRAR EL FORMULARIO */
+            border: 2px black solid; /* GROSOR DEL BORDE */
+            border-radius: 5px; /* REDONDEAR ESQUINAS */
+            padding: 15px; /* ESPACIO INTERNO */
+            background-color: rgba(19, 174, 50, 0.626); /* COLOR DE FONDO */
+        
+    }
+    main{
+        background-image:url(../recursos/jose.jpg); /* IMAGEN DE FONDO */
+        text-align: center;
+        background-position: center;
+        color: rgb(92, 21, 21); /* COLOR DEL TEXTO */
+        background-repeat: no-repeat;
+        background-color: #8b3627;
+    }
+    #formulario-registro{
+        display: flex; /* HACE QUE LOS ELEMENTOS SE MUESTRAN EN UNA SOLA LINEA */
+        flex-direction: column;
+        width: 30%; /* ANCHO DEL FORMULARIO */background-image:url(); /* IMAGEN DE FONDO */
+        text-align: center;
+        background-position: center;
+        margin: 10px auto; /* CENTRAR EL FORMULARIO */
+        border: 2px rgb(251, 231, 231) solid; /* GROSOR DEL BORDE */
+        border-radius: 5px; /* REDONDEAR ESQUINAS */
+        padding: 15px; /* ESPACIO INTERNO */
+        background-color: rgb(218, 203, 203); /* COLOR DE FONDO */
+        
+     
+    }
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card {
+        width: 250px;
+        height: 300px;
+        perspective: 1000px;
+    }
+    
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border: 1px solid #0b0a0a;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .card-front {
+        background-color: #000000;
+        text-align: center;
+    }
+    
+    .card-front img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+    
+    .card-front h3 {
+        margin: 10px 0;
+    }
+    
+    .card-back {
+        background-color: #040303;
+        transform: rotateY(180deg);
+        padding: 15px;
+        text-align: left;
+        overflow-y: auto;
+    }
+    
+    .card-back h3 {
+        margin-top: 0;
+        color: #d94e36;
+    }
+    
+    .card-back p {
+        margin: 5px 0;
+    }
+    
+   
