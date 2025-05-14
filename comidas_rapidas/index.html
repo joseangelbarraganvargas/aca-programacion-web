@@ -1,39 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html lang="es"> <!-- Idioma principal del documento Español-->
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rápido y Delicioso</title>
-    <link href="./estilos/style.css" rel="stylesheet">
+    <!-- Codificación de caracteres estándar para caracteres especiales UTF-8  -->
+    <meta charset="UTF-8"> 
+    <!-- Permite el diseño responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Título de la pestaña del navegador -->
+    <title>Rápido y Delicioso</title> 
+    <!-- Enlace a la hoja de estilos CSS externa para dar formato al sitio -->
+    <link href="./estilos/style.css" rel="stylesheet"> 
 </head>
 <body>
 
 <header>
+    <!-- Título del negocio, con la clase para darle estilos -->
     <h1 class="COMIDAS">COMIDAS RÁPIDAS "LA PERRADA DEL JUANO"</h1>
     <h4>Rápido y Delicioso</h4>
-    <nav>
+    <!-- Barra de navegación para moverse por distintas vistas -->
+    <nav> 
         <ul id="vistas">
             <li><a href="#index.html">Inicio</a></li>
-            <li><a href="./menu.html">Menú</a></li>
+            <li><a href="./vistas/menu.html">Menú</a></li>
             <li><a href="./vistas/nosotros.html">Nosotros</a></li>
             <li><a href="./vistas/contacto.html">Contacto</a></li>
             <li><a href="./vistas/registrese.html">Regístrese</a></li>
         </ul>
     </nav>
+    <!-- Imagen logo de la empresa -->
     <img src="./recursos/jose.jpg" alt="Logo La Perrada del Juano" id="logo">
 </header>
 
+<!-- Contenido principal de la página -->
 <main>
     <h1 class="titulos">BIENVENIDOS A LA PERRADA DEL JUANO</h1>
 
     <h2><strong>¡El mejor sabor en comidas rápidas está aquí!</strong></h2>
 
-    <h3>En <strong>La Perrada del Juano</strong> te ofrecemos las perras más deliciosas, hamburguesas jugosas, salchipapas cargadas y una variedad de comidas rápidas que te harán volver una y otra vez.</h3>
+    <h3>En <strong>La Perrada del Juano</strong> te ofrecemos las perras más deliciosas, hamburguesas jugosas, 
+        salchipapas cargadas y una variedad de comidas rápidas que te harán volver una y otra vez.</h3>
 
-    <!-- Bloques tipo ajedrez -->
+    <!-- Sección con bloques informativos -->
     <section class="bloques">
 
-        <!-- Bloque 1: ¿Por qué elegirnos? (Imagen arriba) -->
+        <!-- Motivos para elegir el restaurante -->
         <div class="bloque imagen-arriba">
             <img src="./recursos/atencion.png" alt="Ingredientes frescos">
             <h2>¿Por qué elegirnos?</h2>
@@ -46,7 +56,7 @@
             </ul>
         </div>
 
-        <!-- Bloque 2: ¿Qué ofrecemos? (Texto arriba) -->
+        <!-- Oferta del menú -->
         <div class="bloque texto-arriba">
             <h2>¿Qué ofrecemos?</h2>
             <ul>
@@ -60,18 +70,18 @@
 
         </div>
 
-        <!-- Bloque 3: Explora más (Imagen arriba) -->
+        <!-- Enlaces de exploración -->
         <div class="bloque imagen-arriba">
             <img src="./recursos/hamburgresassssssss.jpg" alt="Explora nuestro menú">
             <h2>Explora más</h2>
             <p>
                 <a href="./vistas/nosotros.html">Conoce más sobre nosotros</a><br>
-                <a href="./menu.html">Revisa nuestro menú</a><br>
+                <a href="./vistas/menu.html">Revisa nuestro menú</a><br>
                 <a href="./vistas/contacto.html">Contáctanos o haz tu pedido</a>
             </p>
         </div>
 
-        <!-- Bloque 4: Te esperamos (Texto arriba) -->
+        <!-- Imágenes adicionales del negocio -->
         <div class="bloque texto-arriba">
             <img src="./recursos/JIMENEZ.jpeg" alt="">
            
@@ -83,6 +93,7 @@
 </main>
 
 <footer>
+    <!-- Pie de página con información de derechos -->
     <p>&copy; 2025 Rápido y Delicioso. Todos los derechos reservados.</p>
 </footer>
 
